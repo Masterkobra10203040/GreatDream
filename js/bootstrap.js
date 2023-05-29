@@ -4469,7 +4469,7 @@ onload = ()=>{
 };
 function setLanugage(getLanuage){
 if(getLanuage === "arabic"){
-  home.innerHTML = "fghfghfgh";
+  home.innerHTML = "الرئيسية";
   Services.innerHTML = "الخدمات";
     about.innerHTML = "حولنا";
     portfolio.innerHTML = "ملفات ";
