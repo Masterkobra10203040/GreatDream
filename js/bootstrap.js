@@ -4437,3 +4437,64 @@
 
 }));
 //# sourceMappingURL=bootstrap.js.map
+
+
+
+
+
+
+
+
+
+let arabic = document.getElementById("arabic");
+let english = document.getElementById("english");
+let home = document.getElementById("home");
+let Services = document.getElementById("service");
+let about = document.getElementById("about");
+let portfolio = document.getElementById("portfolio");
+let contact = document.getElementById("contact");
+let detailbox1 = document.getElementById("detailbox1");
+let sowftware = document.getElementById("sowftware");
+let title1img = document.getElementById("title1img");
+let readmore = document.getElementById("readmore");
+
+arabic.onclick = ()=>{
+    setLanugage("arabic");
+    localStorage.setItem("Lang","arabic");
+};
+
+english.onclick = ()=>{
+    setLanugage("english");
+    localStorage.setItem("Lang","english");
+};
+
+onload = ()=>{
+    setLanugage(localStorage.getItem("Lang"));
+};
+function setLanugage(getLanuage){
+if(getLanuage === "arabic"){
+  home.innerHTML = "الرئيسية";
+  Services.innerHTML = "الخدمات";
+    about.innerHTML = "حولنا";
+    portfolio.innerHTML = "ملفات ";
+    contact.innerHTML = "اتصل بنا";
+    readmore.innerHTML = "اتصل بنا";
+  
+    detailbox1.innerHTML = "اجعلنا مستشاريك ونحقق نتائج ناجحة ومثيرة للإعجاب من خلال تحسين وتوجيه سير عملك وتسويق خدماتك ومنتجاتك من خلال تحليل البيانات والحصول على المشورة معنا";
+    title1img.innerHTML = "اجعلنا مستشاريك ونحقق نتائج ناجحة ومثيرة للإعجاب من خلال تحسين وتوجيه سير عملك وتسويق خدماتك ومنتجاتك من خلال تحليل البيانات والحصول على المشورة معنا";
+    sowftware.innerHTML = "اجعلنا مستشاريك ونحقق نتائج ناجحة ومثيرة للإعجاب من خلال تحسين وتوجيه سير عملك وتسويق خدماتك ومنتجاتك من خلال تحليل البيانات والحصول على المشورة معنا";
+
+}else if(getLanuage ==="english"){
+  home.innerHTML = "Home";
+    Services.innerHTML = "Services";
+    about.innerHTML = "  About US";
+    portfolio.innerHTML = "  portfolio";
+    contact.innerHTML = "Contact us";
+
+}
+
+
+
+}
+
+
