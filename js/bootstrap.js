@@ -75,6 +75,7 @@
    * --------------------------------------------------------------------------
    */
   /**
+   
    * ------------------------------------------------------------------------
    * Private TransitionEnd Helpers
    * ------------------------------------------------------------------------
@@ -4441,11 +4442,6 @@
 
 
 
-
-
-
-
-
 let arabic = document.getElementById("arabic");
 let english = document.getElementById("english");
 let home = document.getElementById("home");
@@ -4473,7 +4469,7 @@ onload = ()=>{
 };
 function setLanugage(getLanuage){
 if(getLanuage === "arabic"){
-  home.innerHTML = "الرئيسية";
+  home.innerHTML = "fghfghfgh";
   Services.innerHTML = "الخدمات";
     about.innerHTML = "حولنا";
     portfolio.innerHTML = "ملفات ";
@@ -4496,5 +4492,12 @@ if(getLanuage === "arabic"){
 
 
 }
+
+
+
+ 
+
+
+
 
 
